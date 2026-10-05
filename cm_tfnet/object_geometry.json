@@ -1,0 +1,34 @@
+{
+  "grasp_logs_beike": {
+    "H_m": 0.045,
+    "d_m": 0.04
+  },
+  "grasp_logs_mosha": {
+    "H_m": 0.06,
+    "d_m": 0.025
+  },
+  "grasp_logs_mosilian": {
+    "H_m": 0.05,
+    "d_m": 0.0
+  },
+  "grasp_logs_paomo": {
+    "H_m": 0.05,
+    "d_m": 0.0
+  },
+  "grasp_logs_ruanzhu": {
+    "H_m": 0.077,
+    "d_m": 0.008
+  },
+  "grasp_logs_taocibei": {
+    "H_m": 0.04,
+    "d_m": 0.045
+  },
+  "grasp_logs_touming": {
+    "H_m": 0.06,
+    "d_m": 0.025
+  },
+  "grasp_logs_yingzhu": {
+    "H_m": 0.077,
+    "d_m": 0.008
+  }
+}
