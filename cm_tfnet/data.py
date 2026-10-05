@@ -265,14 +265,17 @@ def trials_from_split_detail(
     split_detail: dict,
     which: str,
 ) -> list[tuple[Path, dict]]:
-    """根据 split_detail 重建某一集合的 trial 列表。"""
+    """根据 split_detail 重建某一集合的 trial 列表。
+
+    划分按试次编号保存。已发布权重里记的是 .csv，当前数据是 .npz，只比编号。
+    """
     want = {}
     for obj, parts in split_detail.items():
-        want[obj] = set(parts[which])
+        want[obj] = {Path(name).stem for name in parts[which]}
     out = []
     for item in trials:
         obj = item[0].parent.name
-        if obj in want and item[0].name in want[obj]:
+        if obj in want and item[0].stem in want[obj]:
             out.append(item)
     return out
 
